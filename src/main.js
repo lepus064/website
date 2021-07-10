@@ -1,12 +1,9 @@
-
 import * as THREE from 'three';
-
-import Stats from 'three/examples/jsm/libs/stats.module.js';
 
 import { FlyControls } from 'three/examples/jsm/controls/FlyControls.js';
 import { Lensflare, LensflareElement } from 'three/examples/jsm/objects/Lensflare.js';
 
-let container, stats;
+let container;
 
 let camera, scene, renderer;
 let controls;
@@ -111,11 +108,6 @@ function init() {
   controls.autoForward = false;
   controls.dragToLook = false;
 
-  // stats
-
-  stats = new Stats();
-  container.appendChild(stats.dom);
-
   // events
 
   window.addEventListener('resize', onWindowResize);
@@ -140,7 +132,6 @@ function animate() {
   requestAnimationFrame(animate);
 
   render();
-  stats.update();
 
 }
 
