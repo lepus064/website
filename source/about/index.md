@@ -17,7 +17,7 @@ title: About
   + **Software Engineer** 
     + November 2019 – March 2021
   
-{% codeblock lang:python %}
-for i in range(10):
-  print(i)
-{% endcodeblock %}
+<!-- {% codeblock lang:python %} -->
+<!-- for i in range(10): -->
+  <!-- print(i) -->
+<!-- {% endcodeblock %} -->
